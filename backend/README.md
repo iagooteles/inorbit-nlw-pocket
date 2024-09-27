@@ -1,6 +1,6 @@
 # Inorbit - NLW Pocket
 
-## Projeto
+## Projeto Backend
 
 Este projeto foi desenvolvido durante a semana da **NLW Pocket** da **Rocketseat** com o objetivo de aprimorar minhas habilidades tanto no **Frontend** quanto no **Backend**. O projeto é uma aplicação de **ToDo List** personalizada, onde o usuário pode cadastrar e gerenciar suas metas diárias e semanais de forma intuitiva.
 
@@ -16,32 +16,18 @@ Para o funcionamento adequado do projeto, **execute o backend antes do frontend*
 - **PostgreSQL**
 - **Docker**
 
-### Frontend
-- **React**
-- **Vite**
-- **Tailwind CSS**
-- **TypeScript**
-- **React Hook Form**
-
-### Ferramentas de Desenvolvimento
-- **TypeScript**
-- **Biome**
-
-## Pré-requisitos
-Certifique-se de ter as seguintes ferramentas instaladas em seu ambiente de desenvolvimento:
-
-- [Docker](https://www.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
-- [Node.js](https://nodejs.org/) (versão 18 ou superior)
-- [npm](https://www.npmjs.com/) (gerenciador de pacotes do Node.js)
-
-
 ### Como executar:
 
 # Projeto Backend
 
 Primeiro execute o Backend do projeto, desenvolvido utilizando [Fastify](https://www.fastify.io/), [Drizzle-ORM](https://github.com/drizzle-team/drizzle-orm) e [Docker](https://www.docker.com/).
 
+## Requisitos
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- [Node.js](https://nodejs.org/) (versão 18 ou superior)
+- [npm](https://www.npmjs.com/) (gerenciador de pacotes do Node.js)
 
 ## Instalação
 
@@ -61,7 +47,6 @@ npm install
 Crie seu arquivo .env no diretório backend e adicione:
 
 DATABASE_URL="postgresql://docker:docker@localhost:5432/inorbit"
-
 
 ### 3. Configuração do banco de dados com Docker
 Este projeto utiliza PostgreSQL como banco de dados. Para configurar e rodar o banco de dados localmente, siga os passos abaixo:
@@ -105,26 +90,3 @@ npm run dev
 ```
 
 Agora, o servidor estará rodando e as rotas estarão disponíveis em http://localhost:3333.
-Lembre-se que para o projeto funcionar, o backend tem que estar rodando em conjunto, ou seja, ao mesmo tempo do frontend.
-
-# Projeto frontend
-
-### Como executar:
-
-#### 1. Navegando até o diretório do frontend
-
-Execute outro terminal, do diretório inicial 'nlw-pocket' entre no diretório do frontend:
-```bash
-cd web
-```
-No diretório web, execute:
-```bash
-npm install
-```
-
-#### 2. Execute o frontend
-```bash
-npm run dev
-```
-
-Pronto! No navegador acesse (http://localhost:5173/) e o projeto estará lá pronto para uso.
